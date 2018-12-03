@@ -54,7 +54,7 @@ nixos-install --option substituters https://cache.nsupdate.info
 # After rebooting and trying out new config
 nixos-rebuild switch --option substituters https://cache.nsupdate.info
 # When building a single package (only as root or nix.trustedUser)
-nix build -f '<nixpkgs>' hello \
+nix build -f '&lt;nixpkgs&gt;' hello \
   --option substituters https://cache.nsupdate.info</pre>
         <h2 class="title">NixOS Config</h2>
         <p>This will persist the binary cache config to be used automatically
