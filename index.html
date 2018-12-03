@@ -12,13 +12,13 @@
 
     <link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.css">
-<style>
+    <style>
 .header {
-    text-align: center;
-    padding-top:5rem;
+  text-align: center;
+  padding-top: 5rem;
 
 }
-</style>
+    </style>
 
   </head>
 
@@ -29,21 +29,23 @@
         <div class=row>
           <div class=column></div>
           <div class=column>
-          <img src="http://krebsco.de/krebs-v2.png" height=200px>
+            <a href=http://krebsco.de>
+              <img src="http://krebsco.de/krebs-v2.png" height=200px>
+            </a>
           </div>
-          <div class=column style=font-size:150px>&#128150;</div> 
+          <div class=column style=font-size:150px>&#128150;</div>
           <div class=column >
-          <img
-                             src=https://nixos.org/logo/nixos-logo-only-hires.png
-                              height=200px>
+            <a href=https://nixos.org>
+              <img src=https://nixos.org/logo/nixos-logo-only-hires.png height=200px>
+            </a>
           </div>
           <div class=column></div>
         </div>
 
-          <h1 class="title">NixOS Binary Cache Cache for 35c3</h1>
-          <p>We are making your installations <b>faster</b> without compromising security as all packages are officially signed
-          and only transparently forwarded.</p>
-          </container>
+        <h1 class="title">NixOS Binary Cache Cache for 35c3</h1>
+        <p>We are making your installations <b>faster</b> without compromising security as all packages are officially signed
+        and only transparently forwarded.</p>
+        </container>
       </header>
       <section class="container">
         <h2 class="title">CLI Usage</h2>
@@ -57,7 +59,7 @@ nix build -f '<nixpkgs>' hello \
         <h2 class="title">NixOS Config</h2>
         <p>This will persist the binary cache config to be used automatically
         at run-time:</br>
-          In your <code>configuration.nix</code>
+        In your <code>configuration.nix</code>
         <pre>nix.binaryCaches = [ "https://cache.nsupdate.info" "https://cache.nixos.org/" ];</pre>
       </section>
       <section class=container>
